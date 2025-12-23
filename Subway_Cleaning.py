@@ -39,15 +39,27 @@ print(ttc_all_delays)
 # Cuong Functions
 #-------------------------------------------------------------------------------
 
+# Verify station as non-passenger, passenger, range, or unkown
 
+# Verify linecodes
 
+# Verify delay codes. Sets unkown delay codes to NaN & prints what they were.
 
-
-
+# Add delay description and categorizations to data
 
 
 # Megan Functions
 #-----------------------------------------------------------------------
+
+'''
+clean/standardize station names. Assume non-passenger and range stations 
+have been removed.
+'''
+
+
+''' 
+Seperate range stations
+'''
 
 
 
@@ -55,4 +67,7 @@ print(ttc_all_delays)
 #------------------------------------------------------------------------
 # Single function to call in main file
 def cleanData(df):
+    return df
+
+def cleanRangeStations(df):
     return df
